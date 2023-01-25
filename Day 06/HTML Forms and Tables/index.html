@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" >
+        <tr>
+            <th>TÊN</th>
+            <th>TUỔI</th>
+        </tr>
+        <tr border="2">
+            <td>Jill</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td colspan="1">James</td>
+        </tr>
+    </table>
+
+    <table border="2" >
+        <tr>
+            <th>THÁNG</th>
+            <th>DOANH THU</th>
+        </tr>
+        <tr>
+            <td align="center">Một</td>
+            <td align="center">$100</td>
+        </tr>
+        <tr>
+            <td align="center">Hai</td>
+            <td align="center">$120</td>
+        </tr>
+        <tr>
+            <td colspan="2">TỔNG:$220</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <th align="center">QUÝ</th>
+            <th align="center">THÁNG</th>
+            <th align="center">DOANH THU</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Một</td>
+            <td>Một</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Hai</td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td>Ba</td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Hai</td>
+            <td>Tư</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Năm</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Sáu</td>
+            <td>$100</td>
+        </tr>
+    </table>
+    <br>
+    <form action="https://www.google.com.vn/" method="GET">
+        <input type="text" name="firstname" value="James" />
+        <br>
+        <input type="text" name="lastname" value="Pham" />
+        <br>
+        <input type="submit" value="Nộp bài">
+
+    </form>
+    <br><br>
+    <form action="index.html">
+        <fieldset>
+            <legend>Personal information</legend>
+            First name:
+            <input type="text" name="firstname" value="Mickey"><br>
+            Last name:   
+            <input type="text" name="lastname" value="Mouse"><br>
+            <input type="submit" value="Confirm">
+        </fieldset>
+    </form>
+    <br><br>
+    <h2> Bài 3: Sử dụng input, button và text-area</h2>
+    <h3>Thẻ input</h3>
+    <form action="/index.html">
+        <fieldset>
+            <legend>Enter the account and password</legend>
+                <input type="hidden" name="secret" value="Pham Cong Nguyen">
+                Account:<br>
+                <input type="text" name="account"> <br>
+                Password:<br>
+                <input type="text" name="password"> <br>
+                Hobbies:<br>
+                <label><input type="checkbox" name="hobby" checked> Traveling</label><br>
+                <label><input type="checkbox" name="hobby"> Readings</label><br>
+                <label><input type="radio" name="hobby"> Collecting stamps</label><br>
+                <label><input type="radio" name="hobby" checked> Photography</label><br>
+                <input type="reset" name="reset" value="Reset" >
+                <input type="submit" name="submit" value="Confirm">
+        </fieldset>
+    </form>
+    <br><br><br>
+    <form method="post">
+        <button type="button">
+            <img src="http://codegym.vn/wp-content/uploads/2017/03/CodeGym-3-02-copy.jpg" alt="Anh Codegym" width="100" >
+        </button>
+    </form>
+    <form method="post">
+        <textarea name="commentbox" cols="30" rows="10" > This a very long commnet </textarea>
+    </form>
+    <br><br><br><br>
+    <h3>Select and option</h3>
+    <select name="Domain" multiple>
+        <option value="FBB"> Băng rộng cố định</option>
+        <option value="IP">IP</option>
+        <option value="MW">Viba</option>
+        <option value="PD">Quy hoạch thiết kế</option>
+    </select>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành - Tạo form cơ bản</title>
+</head>
+<body>
+    <h3>Tạo Form cơ bản</h3>
+    <form method="get" action="simpleform.html" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <h2>Order Form</h2>
+        <p>What would you like to order?</p>
+        <select name="item">
+            <option value="PhoneCase">Phone Case</option>
+            <option value="Chager">Iphone Charger</option>
+            <option value="Macbook">Macbook Pro</option>
+        </select>
+        <p>How many would you like to order?</p>
+        <label><input type="radio" >1 - $10</label><br>
+        <label><input type="radio" >2 - $20</label><br>
+        <label><input type="radio" >3 - $30</label><br>
+        <h4>Name <font color="red">*</font></h4> 
+        <input type="text" name="firstname"  placeholder="FirstName" >
+        <input type="text" name="lastname"  placeholder="LastName">
+        <h4>Email</h4>
+        <input type="text" name="email" size="50">
+        <h4>Phone Numer</h4>
+        <input type="text" name="phoneno." size="4"> - 
+        <input type="text" name="phoneno." size="4"> - 
+        <input type="text" name="phoneno." size="4"> <br><br>
+        <input type="button" name="submit" value="Submit">
+    </form>
+
+</body>
+</html>
