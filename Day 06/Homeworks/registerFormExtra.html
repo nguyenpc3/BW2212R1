@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap HTML Form 1 Registration First</title>
+</head>
+<body>
+    <table style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <tr>
+            <td></td>
+            <td style="font-size: x-large; font-weight: 800;">PHIẾU ĐĂNG KÝ</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">Họ và tên:</td>
+            <td><input type="text" name="yourname" > (*)</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">Địa chỉ:</td>
+            <td><input type="text" name="address" ></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">Email:</td>
+            <td><input type="text" name="email" > (*)</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">Giới tính:</td>
+            <td>
+                <input type="radio" name="sex" > Nam
+                <input type="radio" name="sex" > Nữ
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right; size: 10px;" >Tuổi:</td>
+            <td><input type="text" name="age" > (*)</td>
+        </tr>
+        <tr>
+            <td style="text-align: right; vertical-align: top;">Sở thích:</td>
+            <td>
+                <input type="checkbox" name="bobby" > Thể thao <br>
+                <input type="checkbox" name="bobby" > Văn học <br>
+                <input type="checkbox" name="bobby" > Công nghệ thông tin <br>
+                <input type="checkbox" name="bobby" > Lịch sử <br>
+                <input type="checkbox" name="bobby" > Game <br>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right; vertical-align: top;">Chuyên nhành:</td>
+            <td>
+                <select name="major">
+                    <option value="Công nghệ Web">Công nghệ Web</option>
+                    <option value="Back End">Back End</option>
+                    <option value="AI">AI</option>
+                    <option value="Bảo mật thông tin">Bảo mật thông tin</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right; vertical-align: top;">Gửi hình:</td>  
+            <td><input type="text"><input type="button" value="Browse..."></td>
+        </tr>
+        <tr>
+            <td style="text-align: right; vertical-align: top;">Yêu cầu:</td>  
+            <td>
+                <form>
+                    <textarea name="commentbox"  cols="32" rows="3"></textarea>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                
+                <input type="button" name="send" value="Gửi thông tin">
+                <input type="reset" name="send" value="Nhập lại">
+                
+            </td>
+        </tr>
+
+
+
+    </table>
+</body>
+</html>
