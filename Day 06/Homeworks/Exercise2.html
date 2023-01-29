@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập buổi 2</title>
+    <style>
+        table,td,th {
+            border: 1px solid black;
+        }
+           #table1b {border-collapse: collapse} 
+    </style>
+</head>
+<body>
+    <h1>Bài tập 1:  Sử dụng &lt;table&gt; để vẽ trang HTML5 </h1>
+    <table id="table1">
+        <hr>
+        <tr>
+            <th align="left" width="100%">Item Photo</th>
+            <th align="left" >Name</th>
+            <th align="left">Price</th>
+        </tr>
+        <tr>
+            <td><img src="img/orange.png" alt="Oranges" width="150" height="100"></td>
+            <td align="left" >Oranges</td>
+            <td align="left" >$1 ea.</td>
+        </tr>
+        <tr>
+            <td><img src="img/banana.png" alt="banana" width="150" height="100"></td>
+            <td align="left">Bananas</td>
+            <td align="left">$0.75/lb</td>
+        </tr>
+        <tr>
+            <td><img src="img/pomegranate.png" alt="pomegranate" width="150" height="100"></td>
+            <td align="left">Pomegranates</td>
+            <td align="left">3 for $5</td>
+        </tr>
+        <tr>
+            <td><img src="img/jelly.png" alt="gummybear" width="150" height="100"></td>
+            <td align="left">Gummy Bears</td>
+            <td align="left">$6 per bag</td>
+        </tr>
+        <tr>
+            <td><img src="img/broccoli.png" alt="broccoli" width="150" height="100"></td>
+            <td align="left">Brocolli</td>
+            <td align="left">$3 a head</td>
+        </tr>
+    </table>
+    <hr><hr>
+    <h1>Bài tập 1b:  Nâng cấp từ bài 1</h1>
+    <table id="table1b" style="border: 1px solid black;border-collapse: collapse;">
+        <tr>
+            <th align="left" width="100%">Item Photo</th>
+            <th align="left" >Name</th>
+            <th align="left">Price</th>
+        </tr>
+        <tr>
+            <td><img src="img/orange.png" alt="Oranges" width="150" height="100"></td>
+            <td align="left" >Oranges</td>
+            <td align="left" >$1 ea.</td>
+        </tr>
+        <tr>
+            <td><img src="img/banana.png" alt="banana" width="150" height="100"></td>
+            <td align="left">Bananas</td>
+            <td align="left">$0.75/lb</td>
+        </tr>
+        <tr>
+            <td><img src="img/pomegranate.png" alt="pomegranate" width="150" height="100"></td>
+            <td align="left">Pomegranates</td>
+            <td align="left">3 for $5</td>
+        </tr>
+        <tr>
+            <td><img src="img/jelly.png" alt="gummybear" width="150" height="100"></td>
+            <td align="left">Gummy Bears</td>
+            <td align="left">$6 per bag</td>
+        </tr>
+        <tr>
+            <td><img src="img/broccoli.png" alt="broccoli" width="150" height="100"></td>
+            <td align="left">Brocolli</td>
+            <td align="left">$3 a head</td>
+        </tr>
+    </table>
+    <hr><hr>
+    <h1>Bài tập 2: Sử dụng &lt;form&gt; để vẽ form trong HTML5 </h1>
+    <form>
+        <h1 style="color: purple;">A Simple Form</h1>
+        <h2 style="color: #FF4E5D ;">Form fundamental</h2>
+        <fieldset>
+            <legend>Customer Info</legend>
+            <p>
+                <label for="fullname">Name:</label>
+                <input type="text" name="name" id="fullname" placeholder="Enter your name" size="50" autofocus>
+            </p>
+            <p>
+                <label for="telephone">Telephone:</label>
+                <input type="text" name="telephone" id="telephone" placeholder="Pattern:1-123-567-8910" size="50">
+            </p>
+            <p>
+                <label for="email">Email address:</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email address" size="50">
+            </p>
+            <p>
+                <label>Gender</label>
+                <input type="radio" name="male" id="male" value="male"> <label for="male">Male</label>
+                <input type="radio" name="female" id="female" value="female"> <label for="female">Female</label>
+
+            <p>
+                <label>Hobbies</label>
+                <input type="checkbox" name="basketball" id="basketball"> <label for="basketball">Basketball</label>
+                <input type="checkbox" name="football" id="football"> <label for="football">Football</label>
+                <input type="checkbox" name="Badminton" id="Badminton"> <label for="Badminton">Badminton</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Books</legend>
+            <p>
+                <label for="bookname">Name:</label>
+                <input type="text" name="bookname" id="bookname" size="50" autofocus>
+                <label for="qtybook">Quantity (Maximum 5):</label>
+                <input type="number" name="qtybook" id="qtybook" min="1" max="5">
+            </p>
+        </fieldset>
+    </form>
+    <hr><hr>
+    <h1>Bài 3: Tạo form như sau (phần này không ghi yêu cầu - btvn)</h1>
+    <hr>
+    <h1>Travel reservation form</h1>
+    <h2>*denotes mandotory</h2>
+    <form>
+        <label for="travelfullname">Full name*:</label><br>
+        <input type="text" name="fullname" id="travelfullname" autofocus placeholder="FirstNam LastName"><br>
+        <label for="travelemail">Email address*:</label><br>
+        <input type="text" name="travelemail" id="travelemail" autofocus><br>
+        <label for="package">Select Tour Package*:</label><br>
+        <select name="package" id="package">
+            <option value="Goa">Goa</option>
+            <option value="Sea">Sea</option>
+            <option value="Thailand Islands">Thailand Islands</option>
+            <option value="Viet Nam Western side">Viet Nam Western side</option>
+        </select><br>
+        <label for="arrivaldate">Arrival date*:</label><br>
+        <input type="date" name="date" id="arrivaldate" autofocus placeholder="m/d/y" ><br>
+        
+        <label for="number">Number of person*:</label><br>
+        <input type="number" name="number" id="number" autofocus min="1" ><br>
+        
+        <label>What would you want to vail*:</label><br>
+        <label for="Boarding">Boarding</label><input type="checkbox" name="mean" id="Boarding" autofocus min="1" ><br>
+        <label for="Fooding">Fooding</label><input type="checkbox" name="mean" id="Fooding" autofocus min="1" ><br>
+        <label for="Sight seeing">Sight seeing</label><input type="checkbox" name="mean" id="Sight seeing" autofocus min="1" ><br>
+       
+        <label for="coupon">Dsicount Coupon Code:</label><br>     
+        <input type="text" name="coupon" id="coupon" autofocus><br>
+        <label>Terns and Conditions*</label><br>  
+        <input type="radio" name="terns" id="agree" value="agree"> <label for="agree">I agree</label>
+        <input type="radio" name="terns" id="disagree" value="disagree"> <label for="disagree">I disagree</label> <br>
+        <input type="submit" value="Complete reservation">       
+    </form>
+    <hr><hr>
+    <h1>Bài tập 4: Sử dụng colspan và rowspan để vẽ bảng HTML </h1>
+    <table style="border: 1px solid black; border-collapse: collapse;">
+        <tr>
+            <td>Hà Nội</td>
+            <td rowspan="2">HCM</td>
+            <td>Đà Nẵng</td>
+            <td>Huế</td>
+        </tr>
+        <tr>
+            <td>Vũng Tàu</td>
+            <td colspan="2">Cà Mau</td>
+        </tr>
+    </table>
+    <hr><hr>
+    <h1>Bài tập 5: Sử dụng các kiến thức được học để vẽ bảng HTML </h1>
+    <form>
+        <p><b>Simple form with name and age</b></p>
+        <table style="border: none">
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Age:</label>
+                </td>
+                <td>
+                    <input type="number" name="age" id="age">
+                </td>
+                <td><input type="submit"  id="add"></td>
+            </tr>
+        </table>
+        <p><b>Current data in the system...</b></p>
+        <table>
+            <tr>
+                <th>&nbsp;</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td><input type="button" value="Delete"></td>
+                <td>John</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Delete"></td>
+                <td>Mile</td>
+                <td>55</td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Delete"></td>
+                <td>Albert</td>
+                <td>39</td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" value="Click here"> to create a Table and some data using JavaScript
+    </form>
+    <hr><hr>
+</body>
+</html>
