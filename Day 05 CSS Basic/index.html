@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css for table</title>
+    <style>
+        .container {
+            margin: auto;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 20px;
+        }
+        #student-list {
+            border-spacing: 0;
+        }
+
+        #student-list tr td,th {
+            border: 1px solid red;
+            padding: 10px;
+            text-align: center;
+        }
+        #student-list tr:nth-child(odd) {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table id="student-list">
+            <tr>
+                <th>Full name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jonny Tri Nguyen</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Hanna Anh Thu</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>Barack Obama</td>
+                <td>40</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>

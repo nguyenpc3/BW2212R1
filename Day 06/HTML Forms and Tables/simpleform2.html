@@ -8,54 +8,54 @@
     </title>
 </head>
 <body>
-    <form>
-        <table>
+    <form method="get" action="Day 06\HTML Forms and Tables\simpleform2.html">
+        <table style="width: 50%;">
             <tr>
-                <th colspan="2" style="background-color: #D4FDD6;color: blue; width: 500;">ĐĂNG KÝ HỌC VIÊN</th>
+                <th colspan="2" style="background-color: #D4FDD6;color: blue; width: 50%;">ĐĂNG KÝ HỌC VIÊN</th>
             </tr>
             <tr>
-                <td style="left: auto; color: navy; width: 100px;">Họ và tên</td>
-                <td><input type="text" name="yourname" size="20px"></td>
+                <td style="left: auto; color: navy; width: 50%;">Họ và tên</td>
+                <td><input type="text" name="yourname" width="50%"></td>
             </tr>
             <tr>
-                <td style="left: auto; color: navy; width: 100px;">Ngày sinh</td>
-                <td><input type="text" name="birthday" size="7"></td>
+                <td style="left: auto; color: navy; width: 50%;">Ngày sinh</td>
+                <td><input type="date" name="birthday" width="50%"></td>
             </tr>
             <tr>
-                <td style="left: auto; color: navy; width: 100px;">Giới tính</td>
+                <td style="left: auto; color: navy; width: 50%;">Giới tính</td>
                 <td>
-                    <label><input type="radio" name="sex" size="10"> Nam</label>
-                    <label><input type="radio" name="sex" size="10"> Nữ</label>
+                    <label><input type="radio" name="sex" value="nam" width="50%">Nam</label>
+                    <label><input type="radio" name="sex" value="nu" width="50%">Nữ</label>
                 </td>
             </tr>
             <tr>
-                <td style="left: auto; color: navy; width: 100px; vertical-align: top;">Địa chỉ</td>
-                <td><textarea name="address" cols="10" rows="3" style="width: 260px; height: 70px;"></textarea></td>
+                <td style="left: auto; color: navy; width: 50%; vertical-align: top;">Địa chỉ</td>
+                <td><input type="texarea" name="address" style="width: 100%; height: 30px;"></textarea></td>
             </tr>
             <tr>
-                <td style="left: auto; color: navy; width: 100px;">Lớp</td>
+                <td style="left: auto; color: navy; width: 50%;">Lớp</td>
                 <td>
                     <select name="class" >
-                        <option value="grade"> --Chọn lớp--</option>
-                        <option value="grade"> Lớp 2</option>
-                        <option value="grade"> Lớp 3</option>
-                        <option value="grade"> Lớp 4</option>
+                        <option value="none"> --Chọn lớp--</option>
+                        <option value="1"> Lớp 2</option>
+                        <option value="2"> Lớp 3</option>
+                        <option value="3"> Lớp 4</option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td style="left: auto; color: navy; width: 100px;">Email</td>
-                <td><input type="text" name="yourname" size="10"></td>
+                <td style="left: auto; color: navy; width: 50%;">Email</td>
+                <td><input type="email" name="email" width="50%"></td>
             </tr>
             <tr>
-                <td style="left: auto; color: navy; width: 100px;">Điện thoại</td>
-                <td><input type="text" name="yourname" size="10"></td>
+                <td style="left: auto; color: navy; width: 50%;">Điện thoại</td>
+                <td><input type="number" name="phonenumber" width="50%"></td>
             </tr>
             <tr>
                 <td></td>
                 <td>
-                    <input type="button" value="Đăng Ký">
-                    <input type="reset" value="Nhập lại">
+                    <input type="submit" name="submit" value="Đăng Ký">
+                    <input type="reset" name="reset" value="Nhập lại">
                 </td>
             </tr>
         </table>

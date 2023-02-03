@@ -7,8 +7,8 @@
     <title>[Bài tập] Tạo form đơn giản</title>
 </head>
 <body>
-    <form>
-        <table>
+    <form action="Day 06\HTML Forms and Tables\simpleform1.html" method="get">
+        <table style="border: 1px solid black; border-collapse: collapse;">
             <tr>
                 <td bgcolor="red" style="background-color: red; color: white; ;" align="center" colspan="4">SỞ THÍCH CỦA BẠN</td>
             </tr>
@@ -18,37 +18,37 @@
             </tr>
             <tr>
                 <td align="right" style="color: blue;">Email</td>
-                <td><input type="text" name="email" size="14"></td>
+                <td><input type="email" name="email" width="50%"></td>
             </tr>
             <tr>
                 <td style="color: blue; vertical-align: text-top;text-align: right;">Sở thích</td>
                 <td style="color: orange;">
-                    <label><input type="checkbox" name="hobby"> Thể thao</label>
+                    <label><input type="checkbox" name="sport" value="sport"> Thể thao</label>
                 </td>
                 <td style="color: orange;">
-                   <label><input type="checkbox" name="hobby"> Âm nhạc</label>                
+                   <label><input type="checkbox" name="music" value="music"> Âm nhạc</label>                
                 </td>
                 <td style="color: orange;">
-                   <label> <input type="checkbox" name="hobby"> Đọc sách</label> 
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td style="color: orange;">
-                   <label> <input type="checkbox" name="hobby"> Lướt web</label>
-                </td>
-                <td style="color: orange;">
-                   <label> <input type="checkbox" name="hobby"> Chơi gam</label>e
-                </td>
-                <td style="color: orange;">
-                   <label><input type="checkbox" name="hobby"> Điện ảnh</label>
+                   <label> <input type="checkbox" name="reading" value="reading"> Đọc sách</label> 
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td style="color: orange;">
-                   <label> <input type="checkbox" name="hobby"> Du lịch </label><br>
-                    <input type="button" name="send" value="Gửi thông tin">
+                   <label> <input type="checkbox" name="web" value="web"> Lướt web</label>
+                </td>
+                <td style="color: orange;">
+                   <label> <input type="checkbox" name="game" value="game"> Chơi game</label>
+                </td>
+                <td style="color: orange;">
+                   <label><input type="checkbox" name="movie" value="movie"> Điện ảnh</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="color: orange;">
+                   <label> <input type="checkbox" name="hobby" value="hobby"> Du lịch </label><br>
+                    <input type="submit" name="submit" value="Gửi thông tin">
                     <input type="Reset" name="reset" value="Nhập lại">      
                 </td>
             </tr>

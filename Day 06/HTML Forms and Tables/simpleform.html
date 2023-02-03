@@ -8,7 +8,7 @@
 </head>
 <body>
     <h3>Tạo Form cơ bản</h3>
-    <form method="get" action="simpleform.html" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <form method="post" action="simpleform.html" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
         <h2>Order Form</h2>
         <p>What would you like to order?</p>
         <select name="item">
@@ -17,19 +17,19 @@
             <option value="Macbook">Macbook Pro</option>
         </select>
         <p>How many would you like to order?</p>
-        <label><input type="radio" >1 - $10</label><br>
-        <label><input type="radio" >2 - $20</label><br>
-        <label><input type="radio" >3 - $30</label><br>
-        <h4>Name <font color="red">*</font></h4> 
+        <label><input type="radio" name="qty" value="1 - $10">1 - $10</label><br>
+        <label><input type="radio" name="qty" value="2 - $20">2 - $20</label><br>
+        <label><input type="radio" name="qty" value="3 - $30">3 - $30</label><br>
+        <h4>Name <font color="red"><sup>*</sup></font></h4> 
         <input type="text" name="firstname"  placeholder="FirstName" >
         <input type="text" name="lastname"  placeholder="LastName">
         <h4>Email</h4>
-        <input type="text" name="email" size="50">
+        <input type="email" name="email" size="45">
         <h4>Phone Numer</h4>
-        <input type="text" name="phoneno." size="4"> - 
-        <input type="text" name="phoneno." size="4"> - 
-        <input type="text" name="phoneno." size="4"> <br><br>
-        <input type="button" name="submit" value="Submit">
+        <input type="number" name="phoneno.1" size="2"> - 
+        <input type="number" name="phoneno.2" size="2"> - 
+        <input type="number" name="phoneno.3" size="2"> <br><br>
+        <input type="submit" name="submit" value="Submit">
     </form>
 
 </body>
