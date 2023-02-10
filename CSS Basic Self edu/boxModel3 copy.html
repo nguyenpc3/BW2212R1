@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>[Thực hành] Sử dụng Box Model 3</title>
+	<style>
+		.outer {
+			width: 350px;
+			height: 80px;
+			display: flex;
+			/* float: right; */
+			border: 6px solid black;
+			border-radius: 6%;
+		}
+		.inner-left {
+			margin-left: 20px;
+			width: 150px;
+			/* height: 80px; */
+			box-shadow: 0 0 0 4px mediumslateblue;
+			/* box-sizing: border-box; */
+			border-radius: 36%;
+		}
+		.inner-right {
+			width: 150px;
+			/* height: 80px; */
+			/* padding: 30px; */
+			box-shadow: 0 0 0 4px darkred;
+			/* box-sizing: border-box; */
+			border-radius: 36%;
+		}
+		/* .left-float {
+			float: left;
+			width: 50%;
+			height: 100px;
+			background-color: lightblue;
+		}
+
+		.right-float {
+			float: right;
+			width: 50%;
+			height: 100px;
+			background-color: lightgreen;
+		} */
+	</style>
+</head>
+<body>
+	<main>
+		<div class="outer"> 
+			<div class="inner-left"> </div>
+			<div class="inner-right"> </div>
+		</div>
+		
+		<div class="left-float"></div>
+		<div class="right-float"></div>
+
+
+	</main>
+</body>
+</html>

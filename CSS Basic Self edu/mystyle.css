@@ -1,0 +1,118 @@
+body {
+    /* background-color: bisque */
+    /* background: no-repeat url("https://www.shutterstock.com/image-photo/chatgpt-chat-ai-artificial-intelligence-600w-2244714585.jpg"); */
+
+
+}
+
+p {
+    color: red;
+    /* Chứ màu đỏ  */
+    
+    text-align: left;
+    /* căn giữa  */
+
+    border-style: dashed;
+}
+
+#xline {
+    color: cyan;
+}
+
+.header1 {
+    color: greenyellow;
+}
+
+.parent {border-style: dashed;}
+
+p.dotted { border-style: dotted; border-color: blue;}
+p.solid { border-style: solid; border-color: blue;}
+p.double { border-style:double; border-color: blue;}
+p.groove { border-style:groove; border-color: blue;}
+p.hidden { border-style:hidden; border-color: blue;}
+p.ridge { border-style:ridge; border-color: blue;border-width: 10px}
+p.inittial { border-style:initial; border-color: blue;border-width: 10px}
+p.outset { border-style:outset; border-color: blue;border-width: medium}
+p.inset { border-style:inset; border-color: blue;border-width: thin}
+p.mix { border-style:mix; border-color: blue;border-width: thick}
+
+.box {
+    border-style: solid;
+    text-align: center;
+    margin: 10;
+    border-width: 10px;
+    padding: 100px  10px;
+}
+.box2 {
+    border-style: dashed;
+    background-color: bisque;
+    margin: 100px;
+}
+
+
+.realsize {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+
+ul.list1 {
+    list-style-type: decimal-leading-zero;
+    list-style-position: outside;
+}
+
+ul.list2 {
+    list-style-type:georgian;
+    list-style-position: inside;
+    
+}
+
+ul li {background-color: aqua;
+    padding: 10px;
+    list-style-position: inside;
+}
+
+
+
+#bang1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    height: 50px;
+    padding: 100px 10px;
+    text-align: right
+}
+
+td {
+    text-align: left;
+    padding: 20px;
+}
+tr:nth-last-col {background-color: purple;}
+
+
+#bang2 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#bang2 th,td {
+    text-align: left;
+    padding: 10px;
+}
+
+#bang2 tr:nth-child(odd) {
+    background-color: antiquewhite;
+}
+
+#bang2 th {
+    background-color: aquamarine;
+    color: red;
+}
