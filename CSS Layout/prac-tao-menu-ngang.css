@@ -1,0 +1,58 @@
+body{
+    font-family: Arial;
+}
+
+#menu {
+    border: 1px solid rgb(198, 0, 237);
+    height: 30px;
+    color: black;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+#menu ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#menu li {
+    border: 1px solid blueviolet;
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+
+#menu li a {
+    width: 100px;
+    height: 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: black;
+    line-height: 30px;
+}
+
+#menu ul ul li a {
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#menu li a:hover{
+    background-color: red;
+}
+
+#menu ul ul {
+    position: absolute;
+    top: 30px
+    left: 15px;
+    visibility: hidden;
+}
+

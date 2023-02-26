@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+#header {
+    background: rebeccapurple;
+    height: 100px;
+    width: 100%;
+}
+
+#main {
+    background: beige;
+    height: 300px;
+    width: 70%;
+    float: left;
+}
+
+#sidebar {
+    background: gray;
+    height: 300px;
+    width: 30%;
+    float: right;
+}
+
+#footer {
+    background: rebeccapurple;
+    width: 100%;
+    height: 100px;
+    clear: both;
+}

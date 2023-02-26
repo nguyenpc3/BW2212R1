@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tạo một mẫu trang web </title>
+    <style>
+        .grid-container {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container div {
+            background-color: rgb(211, 234, 253);
+            font-size: 2em;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .grid-container {
+            display: grid;
+            /* width: 50%; */
+            /* height: 200px; */
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            grid-gap: 1em;
+            background-color: #2196F3;
+            padding: 1em;
+            /* grid-row-gap: initial; */
+            /* grid-column-gap: initial; */
+            grid-gap: 1%;
+        }
+
+        .header {
+            grid-area: 1 / span 3
+        }
+
+        .menu {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+        .footer {
+            grid-row-start: 3;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The grid-area Property</h1>
+
+    <p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+    <p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on
+        the grid container.</p>
+
+    <p>This grid layout contains six columns and three rows:</p>
+    <div class="grid-container ">
+        <div class="header ">Header</div>
+        <div class="menu">Menu</div>
+        <div class="main">Main</div>
+        <div class="right">Right</div>
+        <div class="footer">Footer</div>
+    </div>
+
+
+</body>
+
+</html>

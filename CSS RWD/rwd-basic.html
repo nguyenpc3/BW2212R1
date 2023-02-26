@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] Tạo trang web Responsive cơ bản</title>
+    <style>
+        header,
+        footer {
+            background-color: #e6e5e6;
+            color: #9daeee;
+            text-align: center;
+        }
+
+        header h1 {
+            padding: 20px 0;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            padding: 5px 0;
+            clear: both;
+        }
+
+
+        .right-sidebar li a {
+            
+            list-style-type: none;
+            color: black;
+        }
+
+        .right-sidebar {
+            list-style-type: none;
+            color: black;
+            padding-left: 0;
+            margin: 0;
+            
+        }
+
+        .right-sidebar li {
+            background-color: #e6e5e6;
+            padding: 10px 0;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .text-muted {
+            color: #9daeee;
+        }
+
+        .bg-grey {
+            background-color: #e6e5e6;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+
+        .px-3 {
+            padding: 0 10px;
+        }
+
+        @media only screen and (min-width:576px) {
+            .col-md-2 {
+                width: 16.66%;
+            }
+            .col-md-8 {
+                width: 61.6%;
+            } 
+        }
+
+        @media only screen and (max-width:575px) {
+            .col-md-12 {
+                width: 100%;
+            }
+
+        }
+
+        .left {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello World</h1>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-12 col-md-2 left text-center" >
+                    <ul class="right-sidebar">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-8 text-muted left">
+                    <h1>Lorum Ipsum</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+                </div>
+                <div class="col-12 col-md-2 text-muted left bg-grey text-center px-3">
+                    <h1>About</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <h3>&copy; copyright w3schools.com</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

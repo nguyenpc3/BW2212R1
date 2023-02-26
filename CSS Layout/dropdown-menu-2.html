@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown-left {
+            width: 200px;
+            font-size: 20px;
+            float: left;
+            margin: 10px;
+        }
+        .dropdown-right {
+            width: 200px;
+            font-size: 20px;
+            float: right;
+            margin: 10px;
+        }
+        .dropdown-left a,.dropdown-right a, .dropdown-content {
+            width: 100%;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-menu {
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: seagreen;
+            padding: 15px 20px;
+        }
+        .dropdown-content a {
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            background-color: powderblue;
+            padding: 15px 20px;
+        }
+
+        .dropdown-content {
+            visibility: hidden;
+        }
+        
+        .dropdown-left:hover .dropdown-content{
+            visibility: visible;
+        }
+        .dropdown-right:hover .dropdown-content{
+            visibility: visible;
+        }
+        .dropdown-menu:hover {
+            background-color: pink;
+        }
+        .dropdown-content a:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown-left">
+        <a href="#" class="dropdown-menu">Dropdown Left</a>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+    <div class="dropdown-right">
+        <a href="#" class="dropdown-menu">Dropdown Right</a>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</body>
+</html>

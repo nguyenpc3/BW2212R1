@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-block property</title>
+    <style>
+        span.a {
+            display: inline;
+            color: yellowgreen;
+            border: 1px solid red;
+            background-color: yellow;
+            height: 1000px;
+            width: 100px;
+            padding: 5px;
+        }
+
+        span.b {
+            display: block;
+            color: blue;
+            background-color: goldenrod;
+            border: 1px solid seagreen;
+            width: 200px;
+            padding: 10px;
+        }
+
+        span.c {
+            display: inline-block;
+            color: blueviolet;
+            background-color: aqua;
+            border: 10px solid yellow;
+            padding: 5px;
+            width: 200px;
+        }
+        .menu {
+            background-color: bisque;
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>The display Property</h1>
+
+    <h2>display: inline</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+        consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl
+        sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+    <h2>display: inline-block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+        consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl
+        sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+    <h2>display: block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+        consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl
+        sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#HOME">HOME</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

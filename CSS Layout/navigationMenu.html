@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Menu</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;   
+            width: 200px;         
+        }
+
+        li a {
+            display: block;
+            padding: 8px 20px;
+            background-color: lightgrey;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: antiquewhite;
+            color: white;
+        }
+
+        a.active {
+            background-color: greenyellow;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .bb-1 {
+            border-bottom: 1px solid black;
+        }
+
+        .border-1 {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul class="border-1 ">
+        <li><a class="active bb-1" href="default.asp">Home</a></li>
+        <li><a class="bb-1" href="news.asp">News</a></li>
+        <li><a class="bb-1" href="contact.asp">Contact</a></li>
+        <li><a class="bb-1" href="about.asp">About</a></li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute</title>
+    <style>
+        .container {
+            width: 300px;
+            position: relative;
+        }
+
+        .container img {
+            width: 100%;
+        }
+
+        
+        .container .title {
+            width: 100%;
+            height: 80px;
+            line-height: 80px;
+            color: white;
+            background-color: rgba(1, 1, 1, 0.5);
+            text-align: center;
+            margin: 0;
+            position: absolute;
+            /* bottom: 0; */
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/pineapple.jpg" alt="dua">
+        <p class="title">pineapple</p>
+    </div>
+</body>
+</html>

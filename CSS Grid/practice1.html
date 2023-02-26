@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic layout with grid</title>
+    <style>
+        .container {
+            margin: 0;
+            padding: 0;
+            background-color: azure;
+            display: grid;
+            grid-template-areas: 
+            "grid-header grid-header grid-header grid-header grid-header grid-header"
+            "grid-left  grid-content grid-content grid-content grid-content grid-right"
+            "grid-footer grid-footer grid-footer grid-footer grid-footer grid-footer" ;
+            grid-gap: 5px;
+        }
+
+        .container > * {
+            border: 1px solid grey;
+            /* background-color: #e5e5e5; */
+        }
+        .grid-left ul {
+            list-style-type: none;
+            padding: 0;
+            text-decoration: none;
+        }
+        .grid-header {
+            grid-area: grid-header;
+        }
+        .grid-left {
+            grid-area: grid-left;
+        }
+        .grid-content {
+            grid-area: grid-content;
+        }
+        .grid-right {
+            grid-area: grid-right;
+        }
+        .grid-footer {
+            grid-area: grid-footer;
+        }
+
+
+        .grid-header {
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3em;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .grid-footer {
+            text-align: center;
+            vertical-align: middle;
+            line-height: 1.5em;
+            font-size: 1em;
+        }
+        .grid-content {
+            padding: 20px;
+        }
+        .grid-left {
+            padding: 20px;
+        }
+        .grid-left {
+            display: grid;
+            padding: 5px;
+            background-color: white;
+            border: none;
+        }
+        .grid-link1 {
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-left: 0;
+            margin-right: 0;
+            /* border: 1px solid black; */
+            padding: 5px 40px;
+            background:#e5e5e5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-header">Hello world</div>
+        <div class="grid-left">
+            <!-- <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+            </ul> -->
+            <div class="grid-link1"><a href="#">Link 1</a></div>
+            <div class="grid-link1"><a href="#">Link 2</a></div>
+            <div class="grid-link1"><a href="#">Link 3</a></div>
+            <div class="grid-link1"><a href="#">Link 4</a></div>
+        
+        </div>
+        <div class="grid-content">
+            <h2>Leading Change</h2>
+            <p>The international bestseller?now with a new preface by author John Kotter.Millions worldwide have read and embraced John Kotter's ideas on change management and leadership.From the ill-fated dot-com ..</p>
+        </div>
+        <div class="grid-right">
+            <h2>About</h2>
+            <p>
+                The best About Us pages accomplish their goals through telling a story about a brand</p>
+        </div>
+        <div class="grid-footer">Copyright</div>
+    </div>
+</body>
+</html>
